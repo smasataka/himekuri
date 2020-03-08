@@ -11,7 +11,7 @@ function showDate() {
    var nowHour = fmtNumber( now.getHours() );
    var nowMin  = fmtNumber( now.getMinutes() );
    var nowSec  = fMtNumber( now.getSeconds() );
-   var msg = nowYear + "年" nowMonth + "月" nowDate + "日";
+   var msg = nowYear + "年" nowMonth + "月" + nowDate + "日";
    document.getElementById("RealtimeClockArea2").innerHTML = msg;
 }
 setInterval('showDate()',1000);
