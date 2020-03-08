@@ -4,7 +4,7 @@ function fmtNumber(arg) {
    else { return arg; }
 }
 
-// 日本語の曜日に返還
+// 日本語の曜日に変換
 function fmtWeek(arg) {
 	switch (arg)
 	{
@@ -20,7 +20,7 @@ function fmtWeek(arg) {
 	}
 }
 
-// メイン
+// コンテナ
 function getDate() {
    var now = new Date();
    var year = now.getFullYear();
@@ -33,4 +33,6 @@ function getDate() {
 	document.getElementById("date").innerHTML = year + "年" + month + "月" + date + "日" + "　" + week + "曜日";
 	document.getElementById("time").innerHTML = hour + "時" + min + "分" + sec + "秒";
 }
+
+// メイン
 setInterval('getDate()',1000);
