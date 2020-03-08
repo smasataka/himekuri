@@ -1,16 +1,14 @@
-function set2fig(num) {
+function fmtNumber(arg) {
    // 桁数が1桁だったら先頭に0を加えて2桁に調整する
-   var ret;
-   if( num < 10 ) { ret = "0" + num; }
-   else { ret = num; }
-   return ret;
+   if( arg < 10 ) { ret = "0" + arg; }
+   return arg;
 }
-function showClock2() {
-   var nowTime = new Date();
-   var nowHour = set2fig( nowTime.getHours() );
-   var nowMin  = set2fig( nowTime.getMinutes() );
-   var nowSec  = set2fig( nowTime.getSeconds() );
-   var msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。aa";
+function showDate() {
+   var now = new Date();
+   var nowHour = fmtNumber( now.getHours() );
+   var nowMin  = fmtNumber( now.getMinutes() );
+   var nowSec  = fMtNumber( now.getSeconds() );
+   var msg = "現在日時は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。aa";
    document.getElementById("RealtimeClockArea2").innerHTML = msg;
 }
-setInterval('showClock2()',1000);
+setInterval('showDate()',1000);
