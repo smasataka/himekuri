@@ -14,6 +14,6 @@
    //var msg = year + "年" + month + "月" + date + "日";
    //var msg = "test";
    //document.getElementById("RealtimeClockArea2").innerHTML = msg;
-}
+//}
 //setInterval('showDate()',1000);
 document.getElementById("RealtimeClockArea2").innerHTML = "test";
