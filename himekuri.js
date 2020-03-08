@@ -1,8 +1,8 @@
-function fmtNumber(arg) {
+//function fmtNumber(arg) {
    // 桁数が1桁だったら先頭に0を加えて2桁に調整する
-   if( arg < 10 ) { ret = "0" + arg; }
-   return arg;
-}
+   //if( arg < 10 ) { ret = "0" + arg; }
+   //return arg;
+//}
 function showDate() {
    //var now = new Date();
    //var year = now.getFullYear();
