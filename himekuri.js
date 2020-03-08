@@ -24,8 +24,8 @@ function fmtWeek(arg) {
 function getDate() {
    var now = new Date();
    var year = now.getFullYear();
-   var month = now.getMonth() + 1;
-   var date = now.getDate();
+   var month = fmtNumber( now.getMonth() + 1 );
+   var date = fmtNumber( now.getDate() );
    var week = fmtWeek( now.getDay() );
    var hour = fmtNumber( now.getHours() );
    var min  = fmtNumber( now.getMinutes() );
