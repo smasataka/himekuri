@@ -5,13 +5,13 @@ function fmtNumber(arg) {
 }
 function showDate() {
    var now = new Date();
-   var nowYear = now.getFullYear();
-   var nowMonth = now.getMonth() + 1;
-   var nowDate = now.getDate();
+   var year = now.getFullYear();
+   var month = now.getMonth() + 1;
+   var date = now.getDate();
    var nowHour = fmtNumber( now.getHours() );
    var nowMin  = fmtNumber( now.getMinutes() );
    var nowSec  = fMtNumber( now.getSeconds() );
-   var msg = nowYear + "年" + nowMonth + "月" + nowDate + "日";
+   var msg = year + "年" + month + "月" + date + "日";
    document.getElementById("RealtimeClockArea2").innerHTML = msg;
 }
 setInterval('showDate()',1000);
