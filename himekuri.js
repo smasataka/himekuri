@@ -30,7 +30,7 @@ function getDate() {
    var hour = fmtNumber( now.getHours() );
    var min  = fmtNumber( now.getMinutes() );
    var sec  = fmtNumber( now.getSeconds() );
-   var content = year + "年" + month + "月" + date + "日" + week + "曜日" + hour + "時" + min + "分" + sec + "秒";
-   document.getElementById("RealtimeClockArea2").innerHTML = content;
+	document.getElementById("date").innerHTML = year + "年" + month + "月" + date + "日";
+	document.getElementById("time").innerHTML = week + "曜日" + hour + "時" + min + "分" + sec + "秒";
 }
 setInterval('getDate()',1000);
