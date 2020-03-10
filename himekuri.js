@@ -30,7 +30,8 @@ function getDate() {
    var hour = fmtNumber( now.getHours() );
    var min  = fmtNumber( now.getMinutes() );
    var sec  = fmtNumber( now.getSeconds() );
-	document.getElementById("date").innerHTML = year + "年" + month + "月" + date + "日" + "　" + week + "曜日";
+	document.getElementById("week").innerHTML = week
+	document.getElementById("date").innerHTML = year + "年" + month + "月" + date + "日";
 	document.getElementById("time").innerHTML = hour + "時" + min + "分" + sec + "秒";
 }
 
