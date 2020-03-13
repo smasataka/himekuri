@@ -14,7 +14,7 @@ function fmtWeek(arg) {
     case 3: return "水"; break;
     case 4: return "木"; break;
     case 5: return "金"; break;
-    case 6: return "ド"; break;
+    case 6: return "土"; break;
     case 7: return "日"; break;
     default: return "エラー"; break;
 	}
