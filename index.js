@@ -34,4 +34,5 @@ function getDate() {
 }
 
 // メインスレッド
+getDate();
 setInterval('getDate()',1000);
