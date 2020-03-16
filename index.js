@@ -1,6 +1,13 @@
-// メインスレッド
-getDate();
-setInterval('getDate()',1000);
+// main thread
+window.addEventListener(
+  "DOMContentLoaded",
+  function() {
+    getDate();
+    setInterval("getDate();", 1000);
+  },
+  false
+);
+
 
 // 桁数が1桁だったら先頭に0を加えて2桁に調整する
 function fmtNumber(arg) {
