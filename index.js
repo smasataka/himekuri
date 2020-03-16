@@ -1,3 +1,7 @@
+// メインスレッド
+getDate();
+setInterval('getDate()',1000);
+
 // 桁数が1桁だったら先頭に0を加えて2桁に調整する
 function fmtNumber(arg) {
    if ( arg < 10 ) { return "0" + arg; }
@@ -32,7 +36,3 @@ function getDate() {
 	document.getElementById("date").innerHTML = year + "年" + month + "月" + date + "日";
 	document.getElementById("time").innerHTML = hour + "時" + min + "分";
 }
-
-// メインスレッド
-getDate();
-setInterval('getDate()',1000);
